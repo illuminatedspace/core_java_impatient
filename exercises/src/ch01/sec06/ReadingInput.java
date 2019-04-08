@@ -2,6 +2,7 @@ package ch01.sec06;
 
 import java.io.InputStream;
 import java.util.Scanner;
+import java.io.Console;
 
 public class ReadingInput {
     public static void main(String[] args) {
@@ -12,6 +13,12 @@ public class ReadingInput {
 
         System.out.print("Age: ");
         Integer age = in.nextInt();
+
+// doesn't work for some reason
+//        Console terminal = System.console();
+//        String username = terminal.readLine("Username: ");
+//        char[] password = terminal.readPassword("Password: ");
+
 
         Integer ageNextYear = getNextAge(age);
 
